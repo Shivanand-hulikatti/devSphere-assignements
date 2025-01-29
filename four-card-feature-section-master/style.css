@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    font-family: "Poppins", sans-serif; /* Corrected font name */
+    background-color: hsl(0, 0%, 98%);
+    color: hsl(234, 12%, 34%);
+}
+
+.main {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    position: absolute;
+}
+
+.top {
+    height: 20%;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: -10px;
+    flex-wrap: wrap;
+}
+
+.top h1 {
+    font-size: 39px;
+    font-weight: 100;
+    color: hsl(234, 12%, 34%);
+}
+
+.top h2 {
+    font-size: 39px;
+    font-weight: 700;
+    color: hsl(234, 12%, 34%);
+    margin-bottom: 5px;
+}
+
+.top h3 {
+    width: 600px;
+    text-align: center;
+    color: hsl(234, 12%, 34%);
+    font-weight: 100;
+    line-height: 1.5;
+}
+
+.content {
+    height: 80%;
+    width: 77%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: -40px;
+}
+
+.one, .three {
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+
+.two {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    height: 100%;
+    flex: 1;
+}
+
+.card {
+    height: auto;
+    width: 90%;
+    padding: 25px;
+    padding-bottom: 30px;
+    border-top: 3px solid;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.card h4 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.card p {
+    font-size: 14px;
+    color: hsl(229, 6%, 66%);
+}
+
+.card div {
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+img {
+    width: 50px;
+}
+
+@media (max-width: 768px) {
+    .top h1, .top h2 {
+        font-size: 32px;
+    }
+
+    .top h3 {
+        width: 90%;
+        font-size: 16px;
+    }
+
+    .content {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        top: 20px;
+    }
+
+    .one, .two, .three {
+        width: 100%;
+        align-items: center;
+    }
+
+    .card {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    top{
+        margin-top: 10px;
+        width: 90%;
+        gap: 10px;
+    }
+    .top h1, .top h2 {
+        font-size: 24px;
+    }
+    .top h2{
+        margin-bottom: 0;
+    }
+    .top h3 {
+        font-size: 14px;
+    }
+}
